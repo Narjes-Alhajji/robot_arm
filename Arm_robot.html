@@ -1,0 +1,187 @@
+
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Style_arm_robot.css">
+	<title>ArmRobot</title>
+	</head>
+
+	<form method="post" action="arm.php">
+	<body background="images (2).jpg" >
+
+		
+	<div id="wrappear">
+		<a >المحرك الأول</a>
+	<div class="center">	
+	<div class="slider">
+	<div class="show-value">
+	<span id="current- value">180</span>
+	</div>
+		
+		<input type="range" id="custuom-slider" min="0" max="360" value="180" steps="1" name="custuom-slider">
+	<div class="range">
+   <div>0</div>
+	<div>360</div>			
+	</div>
+	</div>	
+	</div>
+		<a  >المحرك الثاني</a>
+		<div class="center2">	
+	<div class="slider2">
+	<div class="show-value2">
+	<span id="current- value2">180</span>
+	</div>
+	
+	<input type="range" id="custuom-slider2" min="0" max="360" value="180" steps="1"name="custuom-slider2">
+	<div class="range2">
+   <div>0</div>
+	<div>360</div>			
+	</div>
+	</div>	
+	</div>
+		<a  >المحرك الثالث</a>
+	<div class="center3">	
+	<div class="slider3">
+	<div class="show-value3">
+	<span id="current- value3">180</span>
+	</div>
+	
+	<input type="range" id="custuom-slider3" min="0" max="360" value="180" steps="1" name="custuom-slider3">
+	<div class="range3">
+   <div>0</div>
+	<div>360</div>			
+	</div>
+	</div>	
+	</div>
+		<a  >المحرك الرابع</a>
+		<div class="center4">	
+	<div class="slider4">
+	<div class="show-value4">
+	<span id="current- value4">180</span>
+	</div>
+		
+	<input type="range" id="custuom-slider4" min="0" max="360" value="180" steps="1" name="custuom-slider4">
+	<div class="range4">
+   <div>0</div>
+	<div>360</div>			
+	</div>
+	</div>	
+	</div>
+		<a  >المحرك الخامس</a>
+		<div class="center5">	
+	<div class="slider5">
+	<div class="show-value5">
+	<span id="current- value5">180</span>
+	</div>
+		
+	<input type="range" id="custuom-slider5" min="0" max="360" value="180" steps="1" name="custuom-slider5">
+	<div class="range5">
+   <div>0</div>
+	<div>360</div>			
+	</div>
+	</div>	
+	</div>
+		<a >المحرك السادس</a>
+		<div class="center6">	
+	<div class="slider6">
+	<div class="show-value6">
+	<span id="current- value6">180</span>
+	</div>
+		
+	<input type="range" id="custuom-slider6" min="0" max="360" value="180" steps="1" name="custuom-slider6" >
+	<div class="range6">
+   <div>0</div>
+	<div>360</div>			
+	</div>
+	</div>	
+	</div>
+		<button id="b1" name="start" > تشغيل</button>
+		<input type="submit" value="حفظ" id="b2" name="submit" />
+		
+		
+		
+		
+		</div>
+		
+		
+		
+	
+		
+	</body>
+		</form>
+	
+	<script>
+	document.getElementById("custuom-slider").addEventListener("input",function(event){
+		let value = event.target.value;
+		document.getElementById("current- value").innerText = value;
+		document.getElementById("current- value").classList.add("active");
+		
+		document.getElementById("current- value").style.left = (value *1) + "px";
+		
+	});
+		
+	  document.getElementById("custuom-slider2").addEventListener("input",function(event){
+		let value = event.target.value;
+		document.getElementById("current- value2").innerText = value;
+		document.getElementById("current- value2").classList.add("active");
+		
+		document.getElementById("current- value2").style.left = (value *1) + "px";
+		
+		
+	});
+		
+		document.getElementById("custuom-slider3").addEventListener("input",function(event){
+		let value = event.target.value;
+		document.getElementById("current- value3").innerText = value;
+		document.getElementById("current- value3").classList.add("active");
+		
+		document.getElementById("current- value3").style.left = (value *1) + "px";
+		
+		
+	});
+		
+		document.getElementById("custuom-slider4").addEventListener("input",function(event){
+		let value = event.target.value;
+		document.getElementById("current- value4").innerText = value;
+		document.getElementById("current- value4").classList.add("active");
+		
+		document.getElementById("current- value4").style.left = (value *1) + "px";
+		
+		
+	});
+		
+		document.getElementById("custuom-slider5").addEventListener("input",function(event){
+		let value = event.target.value;
+		document.getElementById("current- value5").innerText = value;
+		document.getElementById("current- value5").classList.add("active");
+		
+		document.getElementById("current- value5").style.left = (value *1) + "px";
+		
+		
+	});
+		
+		document.getElementById("custuom-slider6").addEventListener("input",function(event){
+		let value = event.target.value;
+		document.getElementById("current- value6").innerText = value;
+		document.getElementById("current- value6").classList.add("active");
+		
+		document.getElementById("current- value6").style.left = (value *1) + "px";
+		
+		
+	});
+		
+
+		
+	
+  
+		
+	
+		
+	
+	</script>	
+</html>
+                    
+  
+    
+		 
